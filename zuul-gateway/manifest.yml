@@ -1,0 +1,8 @@
+applications:
+- name: zuul-gateway
+  memory: 1G
+  random-route: true
+  path: target/zuul-gateway-0.0.1-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  services:
+   - registry-service
